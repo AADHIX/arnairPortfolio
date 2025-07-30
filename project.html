@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Design Project | Abhijith R Nair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Internal CSS for Project Page */
+        :root {
+            --bg-color: #081b29;
+            --second-bg-color: #112e42;
+            --text-color: #ededed;
+            --main-color: #00abf0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--main-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .back-btn i {
+            margin-right: 0.5rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .project-header p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-description {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .project-description h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--main-color);
+        }
+
+        .project-description p {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-features ul {
+            list-style-position: inside;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-features li {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-gallery {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-footer {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background: var(--main-color);
+            color: var(--second-bg-color);
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0088cc;
+            box-shadow: 0 0 15px var(--main-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-header h1 {
+                font-size: 2rem;
+            }
+
+            .project-content {
+                flex-direction: column;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+
+        <div class="project-header">
+            <h1>Mechanical Design Project</h1>
+            <p>Advanced mechanical system design with CAD modeling and performance optimization</p>
+        </div>
+
+        <div class="project-content">
+            <div class="project-description">
+                <h2>Project desc</h2>
+                <p>This project involved the design and optimization of a mechanical system for industrial applications. The goal was to improve efficiency while reducing maintenance requirements and operational costs.</p>
+                
+                <div class="project-features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>CAD modeling using SolidWorks and AutoCAD</li>
+                        <li>Finite Element Analysis for stress testing</li>
+                        <li>Thermodynamic performance optimization</li>
+                        <li>Material selection for durability</li>
+                        <li>Prototype development and testing</li>
+                    </ul>
+                </div>
+
+                <h2>Technical Specifications</h2>
+                <p>The system was designed to operate under extreme conditions with temperatures ranging from -20°C to 120°C. The final design achieved a 23% improvement in energy efficiency compared to previous models.</p>
+            </div>
+
+            <div class="project-gallery">
+                <h2> Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/proj1.jpg" alt="Initial Design Concept">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/proj2.jpg" alt="CAD Model">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <a href="#contact" class="btn">Contact Me About This Project</a>
+        </div>
+    </div>
+</body>
+</html>
