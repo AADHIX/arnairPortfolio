@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Design Project | Abhijith R Nair</title>
+    <title> Project </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -323,56 +323,105 @@
                 margin-left: 0;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="container">
+            </style>
+        </head>
+        <body>
+         <div class="container">
         <a href="index.html" class="back-btn">
             <i class="fas fa-arrow-left"></i> Back to Portfolio
         </a>
 
         <div class="project-header">
-            <h1>Mechanical Design Project</h1>
-            <p>Advanced mechanical system design with CAD modeling and performance optimization for industrial applications</p>
+            <h1>Design and Fabrication of Eye Blink Based Automatic Pneumatic Bumper and Braking System
+                                                                                             </h1>
+            <p>Eye blink detection to activate an automatic braking and bumper deployment mechanism in emergency situations</p>
         </div>
 
         <div class="project-content">
             <div class="project-description">
                 <h2>Project Overview</h2>
-                <p>This comprehensive mechanical design project involved the development of an innovative industrial system aimed at improving operational efficiency while reducing maintenance requirements and lifecycle costs. The project spanned from conceptual design to prototype testing.</p>
+                <p>This project aims to enhance automotive safety by developing an intelligent system that uses eye blink detection to activate an automatic braking and bumper deployment mechanism in emergency situations. The system is particularly beneficial in preventing accidents caused by driver drowsiness or sudden loss of attention.
+                                                   </p>
                 
                 <div class="project-features">
                     <h2>Key Features</h2>
                     <ul>
-                        <li>Advanced CAD modeling using SolidWorks and AutoCAD</li>
-                        <li>Finite Element Analysis for structural integrity validation</li>
-                        <li>Thermodynamic performance optimization</li>
-                        <li>Material selection analysis for enhanced durability</li>
-                        <li>Prototype development and real-world testing</li>
-                        <li>DFM (Design for Manufacturing) implementation</li>
+                        <li>Real-time Drowsiness Detection - Uses IR-based eye blink sensor to monitor driver alertness.</li>
+                        <li>Automatic Braking System - Engages brakes when prolonged eye closure (>2 sec) is detected.</li>
+                        <li>Pneumatic Bumper Deployment - Extends a shock-absorbing bumper to minimize collision impact.</li>
+                        <li>Multi-Stage Safety Alert - Warns driver via buzzer/vibration before activating brakes & bumper</li>
+                        <li>False Trigger Prevention - Adjustable delay and sensitivity settings to avoid unnecessary activation.</li>
+                        <li>Low-Cost & Scalable - Uses Arduino-based control for easy integration in most vehicles.</li>
+
                     </ul>
                 </div>
 
-                <h2>Technical Specifications</h2>
-                <div class="specs-grid">
-                    <div class="spec-item">
-                        <strong>Operating Range</strong>
-                        -20°C to 120°C
-                    </div>
-                    <div class="spec-item">
-                        <strong>Efficiency Gain</strong>
-                        23% improvement
-                    </div>
-                    <div class="spec-item">
-                        <strong>Materials</strong>
-                        Aircraft-grade aluminum, Stainless steel
-                    </div>
-                    <div class="spec-item">
-                        <strong>Project Duration</strong>
-                        6 months
-                    </div>
-                </div>
-            </div>
+               <div class="project-features">
+                                             <h2>Technical Specifications</h2>
+                                            <ul>
+                                         <li><strong>Controller:</strong> Arduino Uno (ATmega328P, 16MHz, 32KB Flash)</li>
+                        <li><strong>Automatic Braking System:</strong> Engages brakes when prolonged eye closure (>2 sec) is detected</li>
+                         <li><strong>Pneumatic Bumper Deployment:</strong> Extends a shock-absorbing bumper to minimize collision impact</li>
+                         <li><strong>Multi-Stage Safety Alert:</strong> Warns driver via buzzer/vibration before activating brakes & bumper</li>
+                         <li><strong>False Trigger Prevention:</strong> Adjustable delay and sensitivity settings to avoid unnecessary activation</li>
+                          <li><strong>Low-Cost & Scalable:</strong> Uses Arduino-based control for easy integration in most vehicles</li>
+                         </ul>
+                        </div>
+
+                          <style>
+                                .project-features {
+                                  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                                 width: 90%;
+                                         max-width: 800px;
+                     margin: 1.25rem auto;
+                         padding: 1.25rem;
+                     background-color: #f8f9fa;
+                     border-radius: 0.5rem;
+                     box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+                }
+
+        .project-features h2 {
+         color: #2c3e50;
+                 border-bottom: 0.125rem solid #3498db;
+             padding-bottom: 0.625rem;
+                 margin-bottom: 0.9375rem;
+              font-size: clamp(1.25rem, 4vw, 1.5rem);
+}
+
+.project-features ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-features li {
+  padding: 0.5rem 0;
+  border-bottom: 0.0625rem dashed #dee2e6;
+  color: #495057;
+  font-size: clamp(0.875rem, 3vw, 1rem);
+  line-height: 1.5;
+}
+
+.project-features li:last-child {
+  border-bottom: none;
+}
+
+.project-features li strong {
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .project-features {
+    padding: 1rem;
+    width: 95%;
+  }
+  
+  .project-features li {
+    padding: 0.625rem 0;
+  }
+}
+</style>
 
             <div class="project-gallery">
                 <h2>Project Gallery</h2>
@@ -382,24 +431,21 @@
                         <div class="gallery-caption">Initial Design Concept</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/proj2.jpg" alt="CAD Model">
-                        <div class="gallery-caption">CAD Model</div>
+                        <img src="assets/proj2.jpg" alt="">
+                        <div class="gallery-caption"></div>
                     </div>
                     <div class="gallery-item">
-                        <img src="assets/proj3.jpg" alt="Stress Analysis">
-                        <div class="gallery-caption">Stress Analysis</div>
+                        <img src="assets/cir.jpg" alt="Circuit">
+                        <div class="gallery-caption">Circuit</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/proj4.jpg" alt="Final Prototype">
-                        <div class="gallery-caption">Final Prototype</div>
-                    </div>
+                    
                 </div>
             </div>
-        </div>
+         </div>
 
         <div class="project-footer">
             <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact About This Project</a>
-            <a href="#" class="btn btn-outline"><i class="fas fa-file-pdf"></i> Download Case Study</a>
+           
         </div>
     </div>
 </body>
