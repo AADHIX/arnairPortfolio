@@ -484,6 +484,72 @@ section {
     margin-bottom: 2rem;
 }
 
+
+
+/* Certifications Section Styles */
+.certifications {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
+}
+
+.certifications h2 {
+    margin-bottom: 5rem;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.certifications-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    transition: .5s ease;
+    height: 100%;
+}
+
+.certifications-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.certifications-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .5s ease;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.certifications-box:hover img {
+    transform: scale(1.05);
+}
+
+.certifications-box .certifications-layer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.certifications-layer h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.certifications-layer p {
+    font-size: 1.4rem;
+    margin: .3rem 0 1rem;
+    color: var(--text-color);
+}
+
 /* Contact Section */
 .contact {
     background: var(--bg-color);
@@ -687,5 +753,21 @@ textarea {
     
     .projects-box {
         flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .certifications-box img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .certifications-container {
+        grid-template-columns: 1fr;
     }
 }
