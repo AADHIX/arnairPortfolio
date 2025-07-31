@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styles for certifications */
+        .certifications-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        
+        .certifications-box {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+        }
+        
+        .certifications-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .certifications-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Remove unwanted spacing between sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        section:not(:first-child) {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- Animated Background -->
@@ -28,6 +65,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#certifications">Certificates</a>
             <a href="#contact">Contact</a>
             <button id="theme-toggle" class="theme-toggle">
                 <i class="fas fa-moon"></i>
@@ -36,34 +74,34 @@
     </header>
 
     <!-- Home Section -->
-<section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Abhijith R Nair</h1>
-        <div class="typing-text">
-            <span id="typed-text"></span>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Abhijith R Nair</h1>
+            <div class="typing-text">
+                <span id="typed-text"></span>
+            </div>
+            <div class="social-media">
+                <a href="http://www.linkedin.com/in/abhijith-r-nair-808695290" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:arnair181@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/p/CqoCFeuhgCz/?igsh=NTEzaGVreng3MHli" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="cta-button" style="margin-top: 2rem;">
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="http://www.linkedin.com/in/abhijith-r-nair-808695290" target="_blank" rel="noopener">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:arnair181@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://www.instagram.com/p/CqoCFeuhgCz/?igsh=NTEzaGVreng3MHli" target="_blank" rel="noopener">
-                <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-         <div class="cta-button" style="margin-top: 2rem;">
-            <a href="#contact" class="btn">Get In Touch</a>
-         </div>
-         </div>
-          <div class="home-img">
-         <div class="oval-container">
-          <img src="assets/proo.jpg" alt="Abhijith R Nair" class="profile-img">
-         </div>
-     </div>
-  </section>
+        <div class="home-img">
+            <div class="oval-container">
+                <img src="assets/proo.jpg" alt="Abhijith R Nair" class="profile-img">
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="about fade-in" id="about">
@@ -159,53 +197,41 @@
         </div>
     </section>
 
-   <!-- Projects Section -->
-<section class="projects fade-in" id="projects">
-    <h2 class="heading">My <span style="color: var(--main-color);">Projects</span></h2>
-    <div class="projects-container">
-        <div class="projects-box">
-            <div class="project-icon">
-                <i class="fas fa-cogs"></i> <!-- Font Awesome gear icon for mechanical projects -->
-            </div>
-            <div class="project-content">
-                <img src="assets/project11.png" alt="Mechanical Design Project" style="width: 300px; height: auto;">
-                <div class="projects-layer">
-                    <h4>DESIGN AND FABRICATION OF EYE BLINK BASED AUTOMATIC PNEUMATIC BUMPER AND BREAKING SYSTEM</h4>
-                    <p>Uses eye blink detection to activate an automatic braking and bumper deployment mechanism in emergency situations</p>
-                    <a href="project.html" class="btn">View Details</a>
+    <!-- Projects Section -->
+    <section class="projects fade-in" id="projects">
+        <h2 class="heading">My <span style="color: var(--main-color);">Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+                <div class="project-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="project-content">
+                    <img src="assets/project11.png" alt="Mechanical Design Project" style="width: 300px; height: auto;">
+                    <div class="projects-layer">
+                        <h4>DESIGN AND FABRICATION OF EYE BLINK BASED AUTOMATIC PNEUMATIC BUMPER AND BREAKING SYSTEM</h4>
+                        <p>Uses eye blink detection to activate an automatic braking and bumper deployment mechanism in emergency situations</p>
+                        <a href="project.html" class="btn">View Details</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-
- <!-- Certifications Section -->
-    <section class="certifications fade-in" id="certifications">
-        <h2 class="heading">My <span style="color: var(--main-color);">Certifications</span></h2>
-        <div class="certifications-container">
-            <div class="certifications-box">
-                <img src="assets/cert1.pdf" alt="Certification 1">
-                <h3>SolidWorks Certification</h3>
-                <p>Certified in Mechanical Design using SolidWorks</p>
-            </div>
-            
-            <div class="certifications-box">
-                <img src="assets/cert1.pdf" alt="Certification 2">
-                <h3>Project Management</h3>
-                <p>Certified in Project Management Fundamentals</p>
-            </div>
-            
-            <div class="certifications-box">
-                <img src="assets/cert1.pdf" alt="Certification 3">
-                <h3>AutoCAD Professional</h3>
-                <p>Certified AutoCAD Professional</p>
-            </div>
-            
-            
-        </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section class="certifications fade-in" id="certifications">
+    <h1 class="heading">My <span style="color: var(--main-color);">Certifications</span></h1>
+        <div class="certifications-container">
+            <div class="certifications-box">
+                <img src="assets/certi1.png" alt="Certification 1">
+            </div>
+            <div class="certifications-box">
+                <img src="assets/certi4.jpg" alt="Certification 2">
+            </div>
+            <div class="certifications-box">
+                <img src="assets/certi3.jpg" alt="Certification 3">
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact fade-in" id="contact">
